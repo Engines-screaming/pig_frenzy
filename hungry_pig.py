@@ -63,7 +63,7 @@ def main():
                 return
             elif event.type == MOUSEBUTTONDOWN:
                 collisions = pig.rect.collidelistall(carrot_objects)
-                if list(collisions) >= 1:
+                if len(collisions) > 0:
                     for c in collisions:
                         carrot_objects[c].eaten()
                         eating_sound.play()
