@@ -1,0 +1,8 @@
+altgraph==0.16.1
+certifi==2019.11.28
+future==0.18.2
+pefile==2019.4.18
+pygame==1.9.6
+PyInstaller==3.5
+pywin32-ctypes==0.2.0
+wincertstore==0.2

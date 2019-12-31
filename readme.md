@@ -2,13 +2,16 @@
 
 A game for my girlfriend as a fun project.
 
-# Setting Up Pipenv
-If you dont have pipenv, you can install on your linux system with:
+# Setting Up Enviroment
+## Conda Env:
 ```
- sudo -H pip install -U pipenv
+conda create --name pig_frenzy python=3.7
+conda activte pig_frenzy
 ```
 
-Then you can install the dependancies from pip.lock file:
+Then to run script:
 ```
-pipenv install --ignore-pipfile
+python hungry_pig.py
 ```
+
+# Exporting to exe with pyinstaller
