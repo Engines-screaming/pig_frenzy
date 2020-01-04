@@ -10,6 +10,7 @@ from helpers import load_sound, load_image
 def main():
     # the main function
     pygame.init()
+    pygame.font.init()
     pygame.mixer.init()  # not sure why i have to do this shit
 
     screen = pygame.display.set_mode((800, 480))
@@ -24,14 +25,14 @@ def main():
     pygame.display.flip()  # updates the areas that are changed using double buffer displays
 
     # objective text
-    font = pygame.font.Font(None, 50)
+    font = pygame.font.SysFont('Arial', 50)
     intro_text = font.render("Kill All the Carrots!", 1, (0, 0, 0))
     intro_text_pos = intro_text.get_rect()
     intro_text_pos.centerx = bg_rect.centerx
     bg.blit(intro_text, intro_text_pos)
 
-    # text for finishing the game
-    font = pygame.font.Font(None, 70)
+    # # text for finishing the game
+    font = pygame.font.SysFont('Arial', 70)
     end_text = font.render("PIG IS FED! GOOD JOB!", 1, (150, 0, 0))
     end_text_pos = end_text.get_rect()
     end_text_pos.centerx = bg_rect.centerx
